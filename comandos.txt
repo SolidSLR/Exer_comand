@@ -76,3 +76,17 @@ cp -v PRUEBA/mensaje PRUEBA/dir1 PRUEBA/dir2 PRUEBA/dir3
 
 #20
 
+ls -lR
+find ~ -name "mensaje"
+
+#21
+
+cp -vr /etc/rc.d/* PRUEBA/dir3/dir31
+
+#22
+
+(Expresiones regulares...)
+
+#23
+
+sudo cp ~otrouser PRUEBA/dir1/dir11
