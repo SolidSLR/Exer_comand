@@ -90,3 +90,42 @@ cp -vr /etc/rc.d/* PRUEBA/dir3/dir31
 #23
 
 sudo cp ~otrouser PRUEBA/dir1/dir11
+
+#24
+
+mv PRUEBA/dir3/dir31 PRUEBA/dir2
+
+#25
+
+find . -type f
+
+#26
+
+mv PRUEBA/dir3/mensaje PRUEBA/dir3/.mensaje
+
+#27
+
+rm -r PRUEBA/dir1
+
+#28
+
+(Expresiones regulares)
+
+#29
+
+(Expresiones regulares)
+
+#30
+
+mv PRUEBA/dir3/dir31/dir312 PRUEBA/dir3/
+
+#31
+
+ln -s dir1 dir3/enlacedir
+
+#32
+
+cd dir3
+mkdir enlacedir/nuevodir
+
+
