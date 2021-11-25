@@ -126,6 +126,12 @@ ln -s dir1 dir3/enlacedir
 #32
 
 cd dir3
-mkdir enlacedir/nuevodir
+mkdir enlacedir/nuevodir (no rula, revisar)
+cd
+
+#33
+
+cp /etc/u* dir3/enlacedir/
+
 
 
