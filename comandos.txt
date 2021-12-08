@@ -85,7 +85,7 @@ cp -vr /etc/rc.d/* PRUEBA/dir3/dir31
 
 #22
 
-(Expresiones regulares...)
+cp -r /bin/?a?? PRUEBA/dir3/dir31/dir311
 
 #23
 
@@ -109,11 +109,11 @@ rm -r PRUEBA/dir1
 
 #28
 
-(Expresiones regulares)
+cp /dev/t???[a*b] PRUEBA/dir3/dir31/dir312
 
 #29
 
-(Expresiones regulares)
+rm -r PRUEBA/dir2/dir31/dir312/???q[^b]
 
 #30
 
@@ -121,7 +121,7 @@ mv PRUEBA/dir3/dir31/dir312 PRUEBA/dir3/
 
 #31
 
-ln -s dir1 dir3/enlacedir
+ln -s PRUEBA/dir1 PRUEBA/dir3/enlacedir
 
 #32
 
@@ -134,4 +134,223 @@ cd
 cp /etc/u* dir3/enlacedir/
 
 #34
+
+ln fich1 PRUEBA/dir2/enlace
+
+#35
+
+rm fich1 cp dir1/enlace dir3/
+
+#36
+
+ln -s /PRUEBA/dir2 PRUEBA/dir1/enlafich1
+
+#37
+
+cd dir1 cp enlafich1 ../dir2/dir31/dir311/fich1
+
+#38
+
+cat enlafich1
+
+#39
+
+rm PRUEBA/dir1/fich1
+
+#40
+
+rm -R PRUEBA/*
+
+#41
+
+mkdir -v PRUEBA/dir1 PRUEBA/dir2
+ls -l PRUEBA
+
+#42
+
+chmod -rwx PRUEBA/dir2
+
+#43
+
+chmod 000 PRUEBA/dir2
+
+#44
+
+ls -l PRUEBA
+
+#45
+
+mkdir PRUEBA/dir2/dir312
+
+#46
+
+chmod 600 PRUEBA/dir2
+mkdir PRUEBA/dir2/dir312
+
+
+#47
+
+ls -l dir2
+
+#48
+
+cd PRUEBA/dir3
+
+#49
+
+ls -l PRUEBA/dir3
+
+#50
+
+umask 033
+
+#51
+
+mkdir dira dirb dirc dird
+
+#52 
+
+ls -ld dira dirb dirc dird
+
+#53
+
+touch uno
+chmod 000 uno 
+rm uno 
+
+#54
+
+chmod = dir2 
+chmod o=rwx dir2
+
+#55
+
+#mkdir propio && chmod 700 propio && touch propio/fich1 && chmod 005 propio/fich1 && touch fich2 && chmod 501 propio/fich2
+
+mkdir carpeta1 
+chmod u=rwx,g=,o= carpeta1 
+touch carpeta1/fich1 
+touch carpeta1/fich2 
+chmod = carpeta1/fich1 
+chmod = carpeta1/fich2 
+chmod o=rw carpeta1/fich1 
+ls -l
+
+#56
+
+ls -lR
+
+#57
+
+pwd
+mkdir correo
+mkdir fuentes 
+
+#58
+
+cd fuentes
+mkdir dir1 dir2 dir3 
+
+#59
+
+mkdir correo/menus 
+
+#60
+
+cd $HOME
+
+#61
+
+#find /dev -type d -name "tty2" -exec ls -l {} ;
+
+#62
+
+ls -l /dev/tt*
+
+#63
+
+#64
+
+#65
+
+#66
+
+#67
+
+#68
+
+#69
+
+mkdir /home/uno 
+chmod u=rw,g=rw,o= uno 
+ls -ld /home/uno
+
+#70
+
+chmod u=rwx,g=rwx,o= /home/uno 
+mkdir /home/uno/uno1 
+chmod u=rwx,g=,o=w /homeuno/uno1 
+ls -ld /home/uno/uno1
+
+#71
+
+#72
+
+#73
+
+touch archivo
+
+#74
+
+cat /etc/motd
+
+#75
+
+#76
+
+#77
+
+#78
+
+#79
+
+#80
+
+time who
+
+#81
+
+ps -U root
+
+#82
+
+#83
+
+#84
+
+ps axu
+
+#85
+
+top -d 1 -n 10
+
+#86
+
+cat /etc/passwd
+
+#87
+
+cat /etc/passwd | wc -l
+
+#88
+
+cat /etc/passwd |grep bash
+
+#89
+
+who -q
+
+#90
+
+#91
 
