@@ -16,7 +16,7 @@ ls /dev/tty??
 
 #5
 
-ls /dev/tty*^\[1|2|3|4] (revisar expresiones regulares)
+ls /dev/tty*[1-4]
 
 #6 
 
@@ -28,7 +28,7 @@ ls -la /
 
 #8
 
-Revisar expresiones regulares
+ls -d /etc/[^t]*
 
 #9
 
@@ -89,7 +89,7 @@ cp -r /bin/?a?? PRUEBA/dir3/dir31/dir311
 
 #23
 
-sudo cp ~otrouser PRUEBA/dir1/dir11
+cp -r ~otrouser/* PRUEBA/dir1/dir11
 
 #24
 
@@ -113,7 +113,7 @@ cp /dev/t???[a*b] PRUEBA/dir3/dir31/dir312
 
 #29
 
-rm -r PRUEBA/dir2/dir31/dir312/???q[^b]
+rm -r PRUEBA/dir2/dir31/dir312/???q*[^b]
 
 #30
 
@@ -126,12 +126,11 @@ ln -s PRUEBA/dir1 PRUEBA/dir3/enlacedir
 #32
 
 cd dir3
-mkdir enlacedir/nuevodir (no rula, revisar)
-cd
+mkdir enlacedir/nuevodir #(no rula, revisar)
 
 #33
 
-cp /etc/u* dir3/enlacedir/
+cp -r /bin/u* dir3/enlacedir/
 
 #34
 
@@ -139,7 +138,8 @@ ln fich1 PRUEBA/dir2/enlace
 
 #35
 
-rm fich1 cp dir1/enlace dir3/
+rm fich1 
+cp dir1/enlace dir3/
 
 #36
 
@@ -147,7 +147,8 @@ ln -s /PRUEBA/dir2 PRUEBA/dir1/enlafich1
 
 #37
 
-cd dir1 cp enlafich1 ../dir2/dir31/dir311/fich1
+cd dir1 
+cp enlafich1 ../dir2/dir31/dir311/fich1
 
 #38
 
@@ -225,16 +226,8 @@ chmod o=rwx dir2
 
 #55
 
-#mkdir propio && chmod 700 propio && touch propio/fich1 && chmod 005 propio/fich1 && touch fich2 && chmod 501 propio/fich2
+cd mkdir propio && chmod 700 propio && touch propio/fich1 && chmod 005 propio/fich1 && touch fich2 && chmod 501 propio/fich2
 
-mkdir carpeta1 
-chmod u=rwx,g=,o= carpeta1 
-touch carpeta1/fich1 
-touch carpeta1/fich2 
-chmod = carpeta1/fich1 
-chmod = carpeta1/fich2 
-chmod o=rw carpeta1/fich1 
-ls -l
 
 #56
 
@@ -261,21 +254,30 @@ cd $HOME
 
 #61
 
-#find /dev -type d -name "tty2" -exec ls -l {} ;
+#find /dev -type d -name "tty2"|date .r *
 
 #62
 
 ls -l /dev/tt*
 
 #63
+ls -p /usr/bin | grep -v /
 
 #64
 
+ls -ldr /
+
 #65
+
+find / -user root -type d
 
 #66
 
+find /user/include -type -f -regex ".*.h"
+
 #67
+
+ls /bin/ls*
 
 #68
 
@@ -294,6 +296,8 @@ ls -ld /home/uno/uno1
 
 #71
 
+
+
 #72
 
 #73
@@ -308,11 +312,22 @@ cat /etc/motd
 
 #76
 
+mkdir PRUEBA
+chmod a-r PRUEBA 
+find propio/ -type d > direc
+
+
 #77
+
+
 
 #78
 
+find /etc .type f > direc
+
 #79
+
+
 
 #80
 
